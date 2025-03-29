@@ -1,16 +1,16 @@
-# TaskJob - User Data Management
+# ReTask - User Data Management
 
 ## 📌 Overview
 
-TaskJob is a web application designed to facilitate the management of user data. It provides functionalities to view, update, and delete user information, offering a streamlined interface for administrative tasks or user profile management.
+ReTask is a web application designed to facilitate the management of user data. It provides functionalities to view, update, and delete user information, offering a streamlined interface for administrative tasks or user profile management.
 
 ## 🚀 Live Demo
 
-[Link to your live deployed TaskJob application, if available. For example: `https://taskjob-admin.example.com/`]
+https://newretask.web.app/
 
 ## 🛠 Installation
 
-To run TaskJob locally, follow these steps:
+To run ReTask locally, follow these steps:
 
 ### 1️⃣ Prerequisites
 
@@ -23,5 +23,4 @@ Make sure you have the following installed on your system:
 ### 2️⃣ Clone the Repository
 
 ```bash
-git clone [https://github.com/AnantaBG/TaskJob.git](https://www.google.com/search?q=https://github.com/AnantaBG/TaskJob.git)
-cd TaskJob
+git clone [https://github.com/AnantaBG/TaskJob.git](https://github.com/AnantaBG/TaskJob)
