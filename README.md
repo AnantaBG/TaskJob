@@ -1,66 +1,27 @@
-## 📌 Overview  
-This is a **Job Task App**. The app provides **real-time updates** and maintains data persistence through a **MongoDB database**.  
+# TaskJob - User Data Management
 
-Users must authenticate via **Firebase Authentication (Google Sign-In)** to access the application. The app features a **modern, minimalistic UI** and is **fully responsive** for both desktop and mobile users.  
+## 📌 Overview
 
-## 🚀 Live Demo  
-🔗 **Frontend:** [https://reacttasks77.web.app/](#)  
-🔗 **Backend:** [https://task-management-server-iota-rose.vercel.app/](#)  
+TaskJob is a web application designed to facilitate the management of user data. It provides functionalities to view, update, and delete user information, offering a streamlined interface for administrative tasks or user profile management.
 
----
+## 🚀 Live Demo
 
-<!-- ## 📂 Table of Contents  
-- [Features](#-features)  
-- [Technologies Used](#-technologies-used)  
-- [Installation](#-installation)   
-- [License](#-license)  
+[Link to your live deployed TaskJob application, if available. For example: `https://taskjob-admin.example.com/`]
 
----
+## 🛠 Installation
 
-## ✨ Features  
-✔ **User Authentication** via Firebase (Google Sign-In)  
-✔ **Task CRUD Operations** (Create, Read, Update, Delete)  
-✔ **Drag-and-Drop Task Reordering**  
-✔ **Real-time Updates & Persistence** (MongoDB + Express.js API)  
-✔ **Optimistic UI Updates** (Frontend updates before server confirmation)  
-✔ **Fully Responsive UI** (Desktop & Mobile)  
-✔ **Dark Mode** (Optional)  
-✔ **Task Due Dates with Color Indicators** (Overdue tasks turn red)  
+To run TaskJob locally, follow these steps:
 
----
+### 1️⃣ Prerequisites
 
-## 🛠 Technologies Used  
+Make sure you have the following installed on your system:
 
-### **Frontend:**  
-- **React.js (Vite.js)** – UI Framework  
-- **Firebase Authentication** – User Authentication   
-- **Tailwind CSS / Styled Components** – UI Styling  
-- **Axios** – API Requests  
+* **Node.js** (version >= 14 recommended)
+* **npm** or **yarn** (package managers for Node.js)
+* **MongoDB** (Ensure you have a MongoDB instance running locally or have access to a remote instance)
 
-### **Backend:**  
-- **Node.js + Express.js** – Backend Framework  
-- **MongoDB + Mongoose** – Database & ORM  
-- **Firebase Admin SDK** – User Verification  
-- **CORS & Helmet** – Security Middleware  
-- **Dotenv** – Environment Variables  
+### 2️⃣ Clone the Repository
 
----
-
-## 📜 License  
-
-This project is licensed under the **MIT License**.  
-
-📌 **Developed by [AnantaBG](https://github.com/AnantaBG)**  
-
-
----
-
-💬 **Feel free to contribute or provide feedback! 🚀**  
-
-## 🛠 Installation  
-
-### **1️⃣ Clone the Repository**  
-```sh
-git clone https://github.com/AnantaBG/TaskManagementBG
-cd task-manager
- -->
+```bash
+git clone [https://github.com/AnantaBG/TaskJob.git](https://www.google.com/search?q=https://github.com/AnantaBG/TaskJob.git)
+cd TaskJob

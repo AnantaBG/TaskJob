@@ -17,7 +17,7 @@ const NavBar = () => {
         <div className="sticky z-50 backdrop:blur-3xl top-0 mb-1">
             <Navbar fluid rounded className="bg-blue-200">
                 <Navbar.Brand href="/">
-                    <img src={R} className="mr-3 rounded-sm h-6 sm:h-9" alt="ReactTasks" />
+                    <img src={R} className="mr-3 rounded-sm h-6 sm:h-9" alt="ReTask" />
                 </Navbar.Brand>
                 <div className="flex lg:order-2">
     <Dropdown

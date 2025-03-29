@@ -16,9 +16,7 @@ const AllTasks = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const usersPerPage = 7; // Reduce per page for smaller screens
-
-    // State for Update Modal
+    const usersPerPage = 7;
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedUser, setSelectedUser] = useState(null);
     const [updateEmail, setUpdateEmail] = useState('');
@@ -29,7 +27,7 @@ const AllTasks = () => {
             setLoading(true);
             try {
                 const response = await axiosPublic.get('/allUsers');
-                setUsers(response.data);
+                setUsers(response.data.reverse());
                 setLoading(false);
             } catch (err) {
                 setError(err);
@@ -47,7 +45,7 @@ const AllTasks = () => {
                 user.name.toLowerCase().includes(searchTerm.toLowerCase())
             );
             setSearchResults(results);
-            setCurrentPage(1); // Reset page on search
+            setCurrentPage(1); 
         } else {
             setSearchResults([]);
         }
@@ -104,7 +102,6 @@ const AllTasks = () => {
                 email: updateEmail,
                 name: updateName,
             });
-            // Update the users state to reflect the changes
             const updatedUsers = users.map(user =>
                 user._id === selectedUser._id ? { ...user, email: updateEmail, name: updateName } : user
             );
@@ -130,10 +127,8 @@ const AllTasks = () => {
             if (result.isConfirmed) {
                 try {
                     await axiosPublic.delete(`/users/${id}`);
-                    // Remove the deleted user from the users state
                     const remainingUsers = users.filter(user => user._id !== id);
                     setUsers(remainingUsers);
-                    // Optionally, recalculate total pages if the last item on the page was deleted
                     if (remainingUsers.length % usersPerPage === 0 && currentPage > 1) {
                         setCurrentPage(currentPage - 1);
                     }
@@ -169,7 +164,7 @@ const AllTasks = () => {
     return (
         <div>
             <Helmet>
-                <title>React Tasks || Home-Details</title>
+                <title>ReTask || All_Users</title>
             </Helmet>
             <div className="flex flex-col mt-2">
                 <h1 className='text-xl md:text-2xl flex justify-center mx-auto text-center font-bold mb-2'>All Users</h1>
@@ -241,13 +236,13 @@ const AllTasks = () => {
                             currentPage={currentPage}
                             totalPages={totalPages}
                             onPageChange={onPageChange}
-                            layout="pagination" // Adjust layout if needed
+                            layout="pagination" 
                         />
                     </div>
                 )}
             </div>
 
-            {/* Update Modal */}
+             {/* Update Modal */}
             <Modal show={isModalOpen} onClose={closeModal}>
                 <Modal.Header>Update User</Modal.Header>
                 <Modal.Body>
