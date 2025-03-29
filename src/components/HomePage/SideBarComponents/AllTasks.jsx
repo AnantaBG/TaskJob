@@ -16,7 +16,7 @@ const AllTasks = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const usersPerPage = 5; // Reduce per page for smaller screens
+    const usersPerPage = 7; // Reduce per page for smaller screens
 
     // State for Update Modal
     const [isModalOpen, setIsModalOpen] = useState(false);
