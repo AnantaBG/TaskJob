@@ -23,4 +23,4 @@ Make sure you have the following installed on your system:
 ### 2️⃣ Clone the Repository
 
 ```bash
-git clone [https://github.com/AnantaBG/TaskJob.git](https://github.com/AnantaBG/TaskJob)
+git clone (https://github.com/AnantaBG/TaskJob)
